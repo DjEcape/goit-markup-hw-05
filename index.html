@@ -66,7 +66,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="btn primary">Заказать услугу</button>
+          <button type="button" class="btn primary" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--особенности-->
@@ -138,6 +140,9 @@
                 width="370"
                 class="work-img"
               />
+              <div class="work-thumb-action">
+                <h3 class="work-thumb-title">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -146,6 +151,9 @@
                 width="370"
                 class="work-img"
               />
+              <div class="work-thumb-action">
+                <h3 class="work-thumb-title">Дизайнерские решения</h3>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -154,6 +162,9 @@
                 width="370"
                 class="work-img"
               />
+              <div class="work-thumb-action">
+                <h3 class="work-thumb-title">Десктопные приложения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -424,28 +435,28 @@
           <h3 class="footer-conection">присоединяйтесь</h3>
           <ul class="social-list actions list">
             <li class="social-item item">
-              <a href="" class="social-link link">
+              <a href="" class="social-link link" aria-label="instagram">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item item">
-              <a href="" class="social-link link">
+              <a href="" class="social-link link" aria-label="twitter">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item item">
-              <a href="" class="social-link link">
+              <a href="" class="social-link link" aria-label="facebook">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item item">
-              <a href="" class="social-link link">
+              <a href="" class="social-link link" aria-label="linkedin">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
@@ -455,5 +466,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close" data-modal-close>
+          <svg width="18px" height="18px">
+            <use href="./images/icons.svg#btn-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
